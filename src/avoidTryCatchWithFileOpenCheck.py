@@ -5,7 +5,7 @@ path = 'hello.txt'
 def my_function():
     x=0
 
-    try: # Noncompliant {{Avoid the use of try-catch-finally}}
+    try:
         print(x)
     except:
         print("Something went wrong")
