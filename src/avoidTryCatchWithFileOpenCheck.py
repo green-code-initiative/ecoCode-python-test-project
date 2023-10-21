@@ -13,8 +13,8 @@ def my_function():
         print("The 'try except' is finished")
 
 def foo():
-    try: # Noncompliant {{Avoid the use of try-catch-finally}}
-        f = open(path)
+    try:
+        f = open(path) # Noncompliant {{Avoid the use of try-catch with a file open in try block}}
         print(f.read())
     except:
         print('No such file '+path)
