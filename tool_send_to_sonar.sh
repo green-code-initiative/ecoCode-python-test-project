@@ -5,4 +5,4 @@
 mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar -Dsonar.host.url=http://localhost:$1 -Dsonar.token=$2
 
 # command if you have a SONARQUBE < 9.9 (sonar.token existing for SONARQUBE >= 10.0)
-# mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar -Dsonar.login=$1
+# mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar -Dsonar.host.url=http://localhost:$1 -Dsonar.login=$2
